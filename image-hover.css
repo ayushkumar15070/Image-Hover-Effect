@@ -1,0 +1,35 @@
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+}
+
+.image-container {
+      display: flex;
+      gap: 20px;
+}
+
+.img-box {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s, filter 0.5s;
+}
+
+.img-box:hover img {
+      transform: scale(1.2);
+      filter: brightness(0.7) contrast(1.2);
+}
